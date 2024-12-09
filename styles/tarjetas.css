@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.tarjetas-main{
+    margin: 10px;
+    text-align: center;
+}
+
+.tarjeta{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    padding: 30px 10px 10px 10px;
+    margin-right: 30px;
+    background-color: rgb(180, 230, 239);
+    border-radius: 15px;
+    overflow: hidden;
+    border: solid black .5px;
+}
+
+p{
+    position: relative;
+    z-index: 1;
+    font-size: medium;
+}
+
+.tarjeta .button{
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta .button a{
+    text-decoration: none;
+    color: white;
+}
+
+.tarjeta .button:hover{
+    background-color: black;
+    color: white;
+}
+
+.tarjeta::before{
+    position: absolute;
+    content: '.';
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    top: -135px;
+    right: 0;
+    border-radius: 50%;
+    z-index: 0;
+    border: none;
+}
+
+.tarjeta.green::before{
+    background-color: green;
+}
+
+.tarjeta.yellow::before{
+    background-color: rgba(255, 255, 0, 0.879);
+}
+
+.tarjeta.red::before{
+    background-color: red;
+}
+
+.green .button{
+    background-color: green;
+}
+
+.yellow .button{
+    background-color: rgba(255, 255, 0, 0.879);
+}
+
+.red .button{
+    background-color: red;
+}
+
+.tarjeta-titulo{
+    position: relative;
+    color: white;
+    z-index: 1;
+    margin-bottom: 60px;
+}
