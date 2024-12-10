@@ -73,11 +73,13 @@ body{
 .pinkcard{
     background-color: #F6BFD9;
     margin-right: 18px;
+    color: #d50032;
 }
 
 .lightbluecard{
     background-color: #98CDE4;
     margin-left: 18px;
+    color: #003b49;
 }
 
 .startext button{
@@ -91,6 +93,16 @@ body{
     padding: 5px 10px;
     margin-top: 15px;
     cursor: pointer;
+}
+
+.pinkcard button{
+    color: #D50032;
+    border: #D50032 solid 1px;
+}
+
+.lightbluecard button{
+    color: #003b49;
+    border: #003b49 solid 1px;
 }
 
 .startext button:hover{
