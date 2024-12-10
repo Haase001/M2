@@ -14,3 +14,63 @@ button {
 button:hover {
     background-color: blue; /* Color del botón cuando el ratón pasa por encima */
 }
+
+.flex-container {
+    display: flex; /* Define al contenedor como un contenedor flex */
+    background-color: #f4f4f4;
+}
+
+.item {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    height: 15px;
+    width: 15px;
+}
+
+.flex-container2 {
+    display: flex;
+    background-color: #f4f4f4;
+    flex-direction: row-reverse; /* Los elementos se alinearán de derecha a izquierda */
+}
+
+.flex-container3 {
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: space-around; /* Espacio alrededor de cada elemento */
+}
+
+.flex-container4 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100px; /* Definimos un tamaño para ver la alineación */
+    background-color: #f4f4f4;
+}
+
+.flex-container5 {
+    display: flex;
+    flex-wrap: wrap; /* Los elementos se distribuirán en varias líneas si es necesario */
+    justify-content: space-around; /* Espacio alrededor de cada elemento */
+    align-items: center; /* Centra verticalmente los elementos en el eje cruzado */
+    gap: 15px; /* Espacio entre elementos */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.wrap {
+    width: 200px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0; /* Se pega en la parte superior cuando llegamos a esa posición */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Asegura que se mantenga sobre el contenido */
+}
