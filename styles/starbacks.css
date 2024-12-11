@@ -2,16 +2,93 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
     font-family: "Inter", sans-serif;
 }
 
+/*Diseño de Barra de Navegación */
+
+.header {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.101);
+    padding: 0 30px;
+    height: fit-content;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item a{
+    color: black;
+    font-weight: 700;
+}
+
+.nav ul {
+    height: 100%;
+}
+
+.nav-item-left {
+    padding: 30px 0;
+}
+
+.navbar .nav img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar .nav-item-left a:hover {
+    padding-bottom: 25px;
+    border-bottom: solid 5px #00754a;
+    color: #00754a;
+}
+
+.navbar .nav-button {
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.navbar .green-border{
+    border: solid 1px #00754a;
+}
+
+.navbar .green-navitem a{
+    color: #00754a;
+}
+
+.navbar .black-navitem {
+    background-color: black;
+}
+
+.navbar .black-navitem a {
+    color: white;
+}
+
+/*Diseño de tarjetas */
+
 #main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.narrow-screen {
+    display: none;
 }
 
 .starcard{
@@ -29,6 +106,7 @@ main .pair {
 }
 
 .starimage{
+    min-width: 350px;
     max-width: 50%;
 }
 
@@ -39,6 +117,7 @@ main .pair {
 
 .startext{
     text-align: center;
+    min-width: 350px;
     max-width: 50%;
     padding: 30px;
 }
@@ -129,4 +208,27 @@ main .pair {
 
 .startext button:hover{
     background-color: rgba(255, 255, 255, 0.153);
+}
+
+/*Diseño de footer */
+
+.info-footer {
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+    padding: 0 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item {
+    width: 100%;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 20px;
 }
