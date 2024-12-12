@@ -87,16 +87,17 @@ body{
     border: solid 1px rgba(0, 0, 0, 0.701);
 }
 
+.narrow-screen {
+    display: none;
+}
+
+
 /*Diseño de tarjetas */
 
 #main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.narrow-screen {
-    display: none;
 }
 
 .starcard{
@@ -245,6 +246,10 @@ main .pair {
     font-weight: 500;
 }
 
+.info-footer .list-title i{
+    display: none;
+}
+
 .info-footer .info-list{
     margin-bottom: 25px;
 }
@@ -375,4 +380,64 @@ main .pair {
 
 .cookie-footer .banner-button button a{
     color: white;
+}
+
+/*Media Queries*/
+
+@media (max-width: 795px) {
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .narrow-screen {
+        display: block;
+    }
+
+    .nav-item-left {
+        display: none;
+    }
+
+    .nav-item-right {
+        display: none;
+    }
+
+    .starcard{
+        flex-direction: column;
+    }
+
+    .starcard .starimage {
+        max-width: 100%;
+    }
+
+    .starcard .startext {
+        max-width: 100%;
+    }
+
+    .starcard .column-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .top-footer {
+        flex-direction: column;
+    }
+
+    .top-footer .info-list a{
+        display: none;
+    }
+
+    .top-footer .ul {
+        width: 100%;
+    }
+
+    .info-footer .list-title{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .info-footer .list-title i{
+        display: inline-flex;
+        cursor: pointer;
+    }
 }
