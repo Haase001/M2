@@ -225,6 +225,7 @@ main .pair {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .footer-item {
@@ -237,6 +238,7 @@ main .pair {
     align-items: flex-start;
     padding: 20px 0;
     gap: 20px;
+    max-width: 1200px;
 }
 
 .info-footer .list-title h3{
@@ -320,4 +322,57 @@ main .pair {
 
 .lower-footer span{
     color: #999;
+}
+
+/*Diseño cookie footer*/
+.cookie-footer{
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+
+.cookie-footer .banner-text{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 22px 0 22px 15px;
+    color: black;
+    flex: 1 0 300px;
+}
+
+.cookie-footer .banner-text strong{
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.cookie-footer .banner-text a{
+    color: black;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.cookie-footer .banner-button{
+    max-width: 130px;
+}
+
+.cookie-footer .banner-button button{
+    text-align: center;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: black;
+    font-size: medium;
+    border-radius: 15px;
+    font-weight: 600;
+    width: 80px;
+    height: 30px;
+}
+
+.cookie-footer .banner-button button a{
+    color: white;
 }
