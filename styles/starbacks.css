@@ -16,6 +16,14 @@ body{
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.101);
     padding: 0 30px;
     height: fit-content;
+    width: 100vw;
+    background-color: white;
+    z-index: 10;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
@@ -70,7 +78,7 @@ body{
     color: #00754a;
 }
 
-.navbar .nav-button {
+.nav-button {
     background-color: transparent;
     border: solid 1px black;
     border-radius: 20px;
@@ -286,6 +294,23 @@ main .pair {
 
 .menu-display .menu-item .menu-options .option-item img:hover {
     border: solid 10px rgba(245, 245, 245, 0.559);
+}
+
+/*Diseño de rewards */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.aside-section{
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    background-color: #00754a;
 }
 
 /*Diseño de footer */
