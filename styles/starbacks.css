@@ -305,10 +305,9 @@ main .pair {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
+    grid-template-columns: 35% 65%;
     justify-items: center;
-    align-items: stretch;
+    align-items: center;
 }
 
 .aside-section{
@@ -316,24 +315,30 @@ main .pair {
     width: 100%;
     position: sticky;
     background-color: #16493B;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.101);
 }
 
 .aside-section #middle{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 35%;
     text-align: center;
     gap: 15px;
     font-size: 24px;
     color: white;
     position: fixed;
-    top: 45%;
-    right: 30%;
+    top: 35%;
+    right: 65%;
+    z-index: 2;
+}
+
+#middle img{
+    width: 70%;
 }
 
 #middle-buttons{
-    width: 35%;
+    width: 75%;
     margin-top: 15px;
     display: flex;
     justify-content: space-around;
@@ -348,12 +353,93 @@ main .pair {
     color: white;
 }
 
+#no-background-white:hover{
+    border-color: #00754a;
+    color: #00754a;
+}
+
 #white-button{
     border: white;
     background-color: white;
     color: #16493B;
 }
 
+.aside-section #rewards-image img{
+    position: fixed;
+    height: auto;
+    width: 15%;
+    bottom: 0;
+    left: 20%;
+    z-index: 1;
+}
+
+.article-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+    font-size: large;
+    max-width: 100%;
+}
+
+#info-section .info-section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10%;
+}
+
+#info-section .pair-background {
+    width: 100%;
+    background-color: #F1F0EB;
+}
+
+#Benefits h3{
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+#Benefits h3 strong {
+    font-weight: 700;
+}
+
+#Benefits h3 i {
+    color: gold;
+}
+
+#Benefits .images-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#Benefits .rewards-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 25%;
+    text-align: center;
+}
+
+#Benefits .rewards-item img{
+    max-width: 154px;
+    max-height: 120px;
+}
+#Benefits .rewards-item p{
+    max-width: 80%;
+}
 /*Diseño de footer */
 
 .info-footer {
@@ -520,6 +606,12 @@ main .pair {
 }
 
 /*Media Queries*/
+
+@media (max-width: 1200px) {
+    #Benefits .images-container .rewards-item{
+        max-width: 50%;
+    }
+}
 
 @media (max-width: 850px) {
     /*Diseño Nav*/
