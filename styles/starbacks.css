@@ -245,10 +245,14 @@ main .pair {
 }
 
 .menu-display .menu-position {
+    width: 100%;
     max-width: 1400px;
     margin-top: 20px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
+
 .menu-display .menu-section {
     width: 100%;
 }
@@ -270,11 +274,11 @@ main .pair {
 }
 
 .menu-display .menu-item .menu-options {
-    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 3%;
     margin: 40px 0;
+    width: 100%;
 }
 
 .menu-display .menu-item .menu-options .option-item{
@@ -282,6 +286,7 @@ main .pair {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .menu-display .menu-item .menu-options .option-item img {
@@ -310,7 +315,43 @@ main .pair {
     height: 100%;
     width: 100%;
     position: sticky;
-    background-color: #00754a;
+    background-color: #16493B;
+}
+
+.aside-section #middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    font-size: 24px;
+    color: white;
+    position: fixed;
+    top: 45%;
+    right: 30%;
+}
+
+#middle-buttons{
+    width: 35%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#middle-buttons button{
+    font-weight: 700;
+}
+
+#no-background-white{
+    border-color: white;
+    color: white;
+}
+
+#white-button{
+    border: white;
+    background-color: white;
+    color: #16493B;
 }
 
 /*Diseño de footer */
@@ -552,6 +593,14 @@ main .pair {
 
 @media (max-width: 480px) {
 
+    /*Diseño menu*/
+
+    .menu-display .menu-item .menu-options .option-item img {
+        height: 160px;
+        width: 160px;
+    }
+
+    /*Diseño footer*/
     .footer-item .legal {
     text-align: start;
     align-self: flex-start;
