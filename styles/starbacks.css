@@ -58,6 +58,18 @@ body{
     color: #00754a;
 }
 
+.navbar .rewards a {
+    padding-bottom: 25px;
+    border-bottom: solid 5px #00754a;
+    color: #00754a;
+}
+
+.navbar .menu a {
+    padding-bottom: 25px;
+    border-bottom: solid 5px #00754a;
+    color: #00754a;
+}
+
 .navbar .nav-button {
     background-color: transparent;
     border: solid 1px black;
@@ -215,6 +227,65 @@ main .pair {
 
 .startext button:hover{
     background-color: rgba(255, 255, 255, 0.153);
+}
+
+/*Diseño de menú */
+.menu-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-display .menu-position {
+    max-width: 1400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.menu-display .menu-section {
+    width: 100%;
+}
+
+.menu-display .menu-header{
+    padding: 40px 20px 20px 20px;
+    font-size: larger;
+}
+
+.menu-display .menu-item {
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.menu-display .menu-item .menu-title {
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    padding: 20px 0;
+}
+
+.menu-display .menu-item .menu-options {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    margin: 40px 0;
+}
+
+.menu-display .menu-item .menu-options .option-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-display .menu-item .menu-options .option-item img {
+    height: 170px;
+    width: 170px;
+    background-color: #1E3932;
+    border-radius: 50%;
+    position: relative;
+}
+
+.menu-display .menu-item .menu-options .option-item img:hover {
+    border: solid 10px rgba(245, 245, 245, 0.559);
 }
 
 /*Diseño de footer */
@@ -384,7 +455,8 @@ main .pair {
 
 /*Media Queries*/
 
-@media (max-width: 795px) {
+@media (max-width: 850px) {
+    /*Diseño Nav*/
     .navbar {
         width: 100%;
         margin: 0;
@@ -402,8 +474,10 @@ main .pair {
         display: none;
     }
 
+    /*Diseño tarjetas*/
     .starcard{
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .starcard .starimage {
@@ -418,6 +492,14 @@ main .pair {
         max-width: 100%;
         margin-bottom: 20px;
     }
+
+    /*Diseño menu*/
+
+    .menu-display .menu-item .menu-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Diseño footer*/
     .top-footer {
         flex-direction: column;
     }
@@ -440,4 +522,29 @@ main .pair {
         display: inline-flex;
         cursor: pointer;
     }
+
+}
+
+@media (max-width: 480px) {
+
+    .footer-item .legal {
+    text-align: start;
+    align-self: flex-start;
+    }
+
+    .footer-item .legal li{
+        display: block;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .lower-footer .legal a{
+        color: rgba(0, 0, 0, 0.7);
+        position: static;
+    }
+    
+    .lower-footer .legal a:hover{
+        color: #999;
+    }
+    
 }
