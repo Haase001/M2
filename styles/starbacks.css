@@ -501,6 +501,46 @@ main .pair {
     aspect-ratio: 1/0.6;
 }
 
+#starapp h2 {
+    margin-bottom: 5%;
+}
+
+#starapp #starapp-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#starapp #starapp-images-container .star-images-item img {
+    max-width: 50%;
+}
+
+#starapp #starapp-images-container .star-images-item p {
+    max-width: 50%;
+}
+
+#starapp #starapp-images-container .star {
+    width: 50px;
+    height: 39px;
+}
+
+#starapp #starapp-images-container .star-images-item {
+    display: flex;
+    align-items: center;
+    max-width: 33%;
+}
+
+#starapp #starapp-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#starapp #starapp-text-container img {
+    max-width: 100%;
+}
 
 
 /*Diseño de footer */
