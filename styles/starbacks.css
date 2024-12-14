@@ -325,7 +325,7 @@ main .pair {
     width: 35%;
     text-align: center;
     gap: 15px;
-    font-size: 24px;
+    font-size: 22px;
     color: white;
     position: fixed;
     top: 35%;
@@ -335,6 +335,10 @@ main .pair {
 
 #middle img{
     width: 70%;
+}
+
+#middle h2{
+    font-weight: 500;
 }
 
 #middle-buttons{
@@ -510,6 +514,7 @@ main .pair {
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 5%;
+    text-align: left;
 }
 
 #starapp #starapp-images-container .star-images-item img {
@@ -528,7 +533,12 @@ main .pair {
 #starapp #starapp-images-container .star-images-item {
     display: flex;
     align-items: center;
-    max-width: 33%;
+    max-width: 35%;
+    margin-bottom: 5%;
+}
+
+#starapp #starapp-images-container .star-value {
+    max-width: 25%;
 }
 
 #starapp #starapp-text-container {
@@ -589,6 +599,7 @@ main .pair {
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .footer-item {
@@ -747,8 +758,13 @@ main .pair {
 /*Media Queries*/
 
 @media (max-width: 1200px) {
+    /*Diseño rewards*/
     #Benefits .images-container .rewards-item{
         max-width: 50%;
+    }
+
+    #info-section .info-section-item {
+        padding: 20px 7%;
     }
 }
 
@@ -796,6 +812,52 @@ main .pair {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /*Diseño rewards*/
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .aside-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.101);
+    }
+    
+    .aside-section #middle{
+        position: static;
+        width: 60%;
+        z-index: 2;
+    }
+
+    #middle-buttons{
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+
+    #middle-buttons button{
+        margin-bottom: 15px;
+    }
+
+    .aside-section #rewards-image{
+        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .aside-section #rewards-image img{
+        position: static;
+        height: auto;
+        width: 40%;
+    }
+
     /*Diseño footer*/
     .top-footer {
         flex-direction: column;
@@ -829,6 +891,105 @@ main .pair {
     .menu-display .menu-item .menu-options .option-item img {
         height: 160px;
         width: 160px;
+    }
+
+    /*Diseño rewards*/
+
+    .aside-section #middle{
+        width: 90%;
+    }
+
+    #Benefits .images-container .rewards-item{
+        max-width: 80%;
+    }
+
+    #rewards-dinamica #rewards-dinamica-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #rewards-dinamica #rewards-dinamica-container .dinamica-images {
+        max-width: 100%;
+    }
+    
+    #rewards-dinamica #rewards-dinamica-container img {
+        max-width: 30%;
+    }
+    
+    #rewards-dinamica #rewards-dinamica-container #dinamica-gif {
+        aspect-ratio: 1/1;
+        max-width: 70%;
+    }
+    
+    #rewards-dinamica #rewards-dinamica-container p {
+        font-size: large;
+        max-width: 70%;
+    }
+
+    #rewards-dinamica #rewards-dinamica-container #chica-starbucks{
+        max-width: 80%;
+        align-self: center;
+    }
+
+    #starapp h2{
+        margin-bottom: 15%;
+    }
+
+    #starapp #starapp-images-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #starapp #starapp-images-container .star-images-item{
+        max-width: 90%;
+        justify-content: center;
+        font-size: large;
+        margin-bottom: 10%;
+    }
+
+    #starapp #starapp-images-container .star-value{
+        max-width: 90%;
+    }
+
+    #starapp #starapp-images-container .star-value p{
+        max-width: 80%;
+    }
+
+    #experiencia-starbucks .experiencia-item{
+        margin-bottom: 10%;
+    }
+
+    #experiencia-starbucks .experiencia-image{
+        max-width: 80%;
+    }
+
+    #experiencia-starbucks #experiencia-logos{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #experiencia-starbucks #experiencia-logos img{
+        max-width: 50%;
+    }
+
+    #info-section #conoce-mas{
+        flex-direction: column;
+    }
+
+    #conoce-mas #conoce-mas-image{
+        max-width: 90%;
+    }
+
+    #conoce-mas #conoce-mas-text{
+        max-width: 80%;
+        text-align: left;
+        margin-top: 10%;
+    }
+
+    #info-section #starbucks-logo{
+        padding: 20px 0;
+        max-width: 100%;
     }
 
     /*Diseño footer*/
