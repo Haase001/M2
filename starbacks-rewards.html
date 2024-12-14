@@ -185,12 +185,12 @@
                     </div>
                 </div>
                 <div id="star-rewards" class="pair-background info-section-item">
-                    <div>
+                    <div class="star-rewards-item">
                         <h2>Tus cafés se convierten en estrellas
                             y recompensas increíbles
                         </h2>
                     </div>
-                    <div>
+                    <div class="star-rewards-item">
                         <img src="./img/star-rewards-1.png" 
                         alt="valor-estrella-card">
                         <p>
@@ -198,7 +198,7 @@
                             pagando con Starbucks card
                         </p>
                     </div>
-                    <div>
+                    <div class="star-rewards-item">
                         <img src="./img/star-rewards-2.png" 
                         alt="valor-estrella-cash">
                         <p>
@@ -215,79 +215,93 @@
                         <p>
                             Así es como funciona
                         </p>
-                        <div>
-                            <img src="./img/dinamica-1.png" 
-                            alt="paso-1">
-                            <p>Descarga la app y registrate</p>
-                        </div>
-                        <div>
-                            <img src="./img/dinamica-2.gif" 
-                            alt="paso-2">
-                        </div>
-                        <div>
-                            <img src="./img/dinamica-3.png" 
-                            alt="paso-3">
-                            <p>
-                                Puedes pagar con tu Starbucks Card,
-                                efectivo o tarjeta bancaria.
-                            </p>
-                        </div>
-                        <div>
-                            <img src="./img/dinamica-4.png" 
-                            alt="chica-starbucks">
+                        <div id="rewards-dinamica-container">
+                            <div class="dinamica-images">
+                                <div class="dinamica-images-item">
+                                    <img src="./img/dinamica-1.png" 
+                                    alt="paso-1">
+                                    <p>Descarga la app y registrate</p>
+                                </div>
+                                <div class="dinamica-images-item">
+                                    <img id="dinamica-gif"
+                                    src="./img/dinamica-2.gif" 
+                                    alt="paso-2">
+                                </div>
+                                <div class="dinamica-images-item">
+                                    <img src="./img/dinamica-3.png" 
+                                    alt="paso-3">
+                                    <p>
+                                        Puedes pagar con tu Starbucks Card,
+                                        efectivo o tarjeta bancaria.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="dinamica-images">
+                                <img id="chica-starbucks"
+                                src="./img/dinamica-4.png" 
+                                alt="chica-starbucks">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        Video
-                    </div>
+                </div>
+                <div class="info-section-item" id="rewards-video">
+                    <iframe
+                    src="https://www.youtube.com/embed/82Tcz85ZdG4?si=_2_zn0OZbfwotM3J" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
                 <div id="starapp-starcard" class="pair-background info-section-item">
                     <h2>Ordena y paga como quieras</h2>
-                    <div>
-                        <img src="./img/star.png" 
-                        alt="star">
-                        <p>1 estrella por cada $20</p>
-                    </div>
-                    <div>
-                        <img src="./img/starapp-1.png" 
-                        alt="QR">
-                        <p>
-                            Escanea el código QR 
-                            y paga en efectivo o con tarjeta bancaria. 
-                            SIN RECARGAR
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./img/starapp-2.png" 
-                        alt="mastercard">
-                        <p>
-                            Añade tu tarjeta bancaria en la App, 
-                            escanea y paga desde tu celular.
-                            <br>
-                            SIN RECARGAR
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./img/star.png" 
-                        alt="star">
-                        <p>1 estrella por cada $10</p>
-                    </div>
-                    <div>
-                        <img src="./img/starapp-3.png" 
-                        alt="starcard">
-                        <p>
-                            Escanea y paga con Starbucks Card 
-                            la forma más fácil y rápida de obtener 
-                            recompensas.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./img/starapp-4.png" 
-                        alt="Registra-y-recarga">
-                        <p>
-                            Colecciona, activa, registra, recarga 
-                            y paga con tu Starbucks Card favorita.
-                        </p>
+                    <div id="starapp-images-container">
+                        <div>
+                            <img src="./img/star.png" 
+                            alt="star">
+                            <p>1 estrella por cada $20</p>
+                        </div>
+                        <div>
+                            <img src="./img/starapp-1.png" 
+                            alt="QR">
+                            <p>
+                                Escanea el código QR 
+                                y paga en efectivo o con tarjeta bancaria. 
+                                SIN RECARGAR
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./img/starapp-2.png" 
+                            alt="mastercard">
+                            <p>
+                                Añade tu tarjeta bancaria en la App, 
+                                escanea y paga desde tu celular.
+                                <br>
+                                SIN RECARGAR
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./img/star.png" 
+                            alt="star">
+                            <p>1 estrella por cada $10</p>
+                        </div>
+                        <div>
+                            <img src="./img/starapp-3.png" 
+                            alt="starcard">
+                            <p>
+                                Escanea y paga con Starbucks Card 
+                                la forma más fácil y rápida de obtener 
+                                recompensas.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./img/starapp-4.png" 
+                            alt="Registra-y-recarga">
+                            <p>
+                                Colecciona, activa, registra, recarga 
+                                y paga con tu Starbucks Card® favorita.
+                            </p>
+                        </div>
                     </div>
                     <h2>
                         Personaliza tu experiencia con tu Starbucks Card
