@@ -542,6 +542,42 @@ main .pair {
     max-width: 100%;
 }
 
+#experiencia-starbucks .experiencia-item {
+    margin-bottom: 5%;
+}
+
+#experiencia-starbucks .experiencia-image {
+    max-width: 50%;
+}
+
+#experiencia-starbucks #experiencia-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#info-section #conoce-mas {
+    flex-direction: row;
+    max-width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#conoce-mas #conoce-mas-image {
+    max-width: 70%;
+}
+
+#conoce-mas #conoce-mas-image img {
+    width: 100%;
+}
+
+#conoce-mas #conoce-mas-text {
+    max-width: 40%;
+}
+
+#starbucks-logo img {
+    max-width: 70%;
+}
 
 /*Diseño de footer */
 
