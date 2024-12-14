@@ -458,7 +458,7 @@ main .pair {
     margin: 30px 0;
 }
 
-#rewards-dinamica h2, p {
+#rewards-dinamica h2, #rewards-dinamica p {
     margin-bottom: 5%;
 }
 
@@ -719,9 +719,9 @@ main .pair {
 .cookie-footer .banner-text{
     font-size: 15px;
     font-weight: 400;
-    margin: 22px 0 22px 15px;
+    padding: 22px 0 22px 15px;
     color: black;
-    flex: 1 0 300px;
+    flex: 1 300px;
 }
 
 .cookie-footer .banner-text strong{
@@ -1013,4 +1013,12 @@ main .pair {
         color: #999;
     }
     
+    /*Diseño cookie footer*/
+    .cookie-footer{
+        flex-direction: column;
+    }
+
+    .cookie-footer .banner-text{
+        flex: 0;
+    }
 }
