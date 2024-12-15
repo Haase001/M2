@@ -37,6 +37,10 @@ body {
     pointer-events: none;
 }
 
+.body {
+    background-color: #020617;
+}
+
 .web-container {
     display: flex;
     flex-direction: column;
@@ -223,6 +227,10 @@ body {
 
     .web-container #About-me {
         margin-top: 900px;
+    }
+
+    .web-container #About-me #about-me-text {
+        width: 90%;
     }
 }
 
