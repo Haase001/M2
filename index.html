@@ -4,32 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Módulo 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!--Está imagen es la que definiré de fondo-->
+    <div id="background">
+        <img src="./img/rising-tech-circle.svg" alt="rising-tech-circle">
+    </div>
+    <!-- Navbar -->
     <nav class="navbar">
-        <img src="https://edu.devf.la/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2Flogo.469dfaf9.png?q=75&url=%2F_next%2Fstatic%2Fmedia%2Flogo.469dfaf9.png&w=256" 
-        alt="DEV.F">
-        <a href="./Clases.html" class="nav-item">Ejemplos de Clase</a>
-        <a href="./tarjetas.html" class="nav-item">Tarjetas</a>
-        <a href="./starbacks.html" class="nav-item">Starbacks</a>
-        <img src="" alt="Becalos">
+        <div class="nav-item nav-image">
+            <a href="./index.html">
+                <img src="https://edu.devf.la/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2Flogo.469dfaf9.png?q=75&url=%2F_next%2Fstatic%2Fmedia%2Flogo.469dfaf9.png&w=256" 
+                alt="DEV.F">
+            </a>
+        </div>
+        <div class="nav-item nav-button">
+            <a href="#course-explanation">Contenido</a>
+        </div>
+        <div class="nav-item nav-button">
+            <a href="#About-me">Acerca de mi</a>
+        </div>
+        <div class="nav-item nav-button">
+            <a href="./Clases.html">Prácticas</a>
+        </div>
+        <div class="nav-item nav-button">
+            <a href="./tarjetas.html">Tarjetas</a>
+        </div>
+        <div class="nav-item nav-button">
+            <a href="./starbacks.html">Starbacks</a>
+        </div>
+        <div class="nav-item nav-image" id="becalos">
+            <img src="./img/logo-becalos.jpg" alt="Becalos" 
+            id="logo-becalos">
+        </div>
     </nav>
     <main>
-        <h1 class="titulo-custom">Título principal</h1>
-        <h1 class="subtitulo-custom">Subtítulo de ejemplo</h1>
-        <p id="identificador-parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, harum. Eveniet, debitis expedita eius vel quisquam aliquid saepe totam reprehenderit labore magni quaerat? At amet incidunt temporibus repellendus adipisci nisi?
-        </p>
-        <span>Texto aleatorio para usar espacio y crear ejemplos
-        </span>
-        <ul>
-            <li class="list-item"><a href="#">Listado de ejemplo 1</a></li>
-            <li class="list-item">Listado de ejemplo 2</li>
-            <li class="list-item">Listado de ejemplo 3</li>
-            <li class="list-item">Listado de ejemplo 4</li>
-            <li class="list-item">Listado de ejemplo 5</li>
-        </ul>
-        <li>Listado de ejemplo fuera de la unordered list</li>
+        <div class="web-container">
+            <div class="container-item" id="web-item">
+                <h1>
+                    Bienvenidos a mi Repositorio!
+                </h1>
+                <h2>by: Sergio Haase</h2>
+                <p>
+                    Este es un proyecto creado para 
+                    practicar diseño de páginas web con CSS
+                </p>
+            </div>
+            <div class="container-item" id="About-me">
+                <div id="about-me-text">
+                    <h2>Acerca de mi</h2>
+                    <p>
+                        Soy un entusiasta de la tecnología y aunque nunca me pude desarrollar academica ni profesionalmente, 
+                        nunca me ha dejado de interesar seguirme formando.
+                        <br>
+                        Por eso al enterarme de esta oportunidad, decidí no desaprovecharla y postularme para obtener la beca.
+                        <br>
+                        Cuando recibí la noticia de que había obtenido la beca, me emocioné mucho y decidí sacarle el mayor provecho a este curso.
+                    </p>
+                    <p>
+                        Tomando en cuenta que estoy aprendiendo de cero y que jamás había usado ni html ni css, yo considero que hice un gran trabajo y me siento satisfecho con el resultado.Aproveche todo lo que pude el curso y aprendí bastante con el Sensei Carlos, quien nos impulsaba a no solo quedarnos con el aprendizaje de la clase, si no investigar más.
+                        Estoy profundamente agradecido con esta oportunidad de aprender a lo largo de estos dos módulos y espero poder tener la oportunidad de seguir aprendiendo.
+                    </p>
+                    <strong>¡Gracias!</strong>
+                </div>
+                <div id="about-me-img">
+                    <img src="./img/Me.jpeg" alt="Me">
+                </div>
+            </div>
+            <div class="container-item" id="course-explanation">
+                <h2>Contenido</h2>
+                <p>
+                    A lo largo de este proyecto aprendimos como 
+                    usar CSS para crear el diseño de una página web,
+                    <br>
+                    Nuestro aprendizaje abarco diversos temas con los
+                    cuales pudimos lograr crear esta pequeña página web:
+                </p>
+                <ul>
+                    <li>
+                        <a href="#1">Reglas en CSS</a>
+                    </li>
+                    <li>
+                        <a href="#2">Propiedades Básicas</a>
+                    </li>
+                    <li>
+                        <a href="#3">Displays</a>
+                    </li>
+                    <li>
+                        <a href="#4">Hover</a>
+                    </li>
+                    <li>
+                        <a href="#5">Box Model</a>
+                    </li>
+                    <li>
+                        <a href="#6">Herencia y Especificidad</a>
+                    </li>
+                    <li>
+                        <a href="#7">Display: Flexbox</a>
+                    </li>
+                    <li>
+                        <a href="#8">Positions</a>
+                    </li>
+                    <li>
+                        <a href="#9">Display: Grid</a>
+                    </li>
+                    <li>
+                        <a href="#10">Estilos Responsivos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-item topics" id="topics-1">
+                <div class="topics-explanation">
+                    <h3 id="1">Reglas en CSS</h3>
+                    <p>
+                        Las reglas en CSS consisten en un selector 
+                        y un bloque de declaraciones encerrado entre 
+                        llaves, donde cada declaración define una 
+                        propiedad y su valor para aplicar 
+                        estilos a elementos HTML.
+                    </p>
+                    <h3 id="2">Propiedades Básicas</h3>
+                    <p>
+                        Incluyen color, font-family, font-size, 
+                        margin, padding, y background, 
+                        que controlan la apariencia de texto, espaciado, 
+                        y fondo de los elementos.
+                    </p>
+                    <h3 id="3">Displays</h3>
+                    <p>Define cómo se organizan los elementos en la página: 
+                        <em>block</em>, 
+                        <em>inline</em>, 
+                        <em>inline-block</em>, o 
+                        <em>none</em>, 
+                        afectando su flujo y visibilidad.
+                    </p>
+                    <h3 id="4">Hover</h3>
+                    <p>
+                        Es un pseudo-clase que aplica estilos cuando el 
+                        usuario pasa el cursor sobre un elemento, 
+                        permitiendo efectos interactivos.
+                    </p>
+                </div>
+                <div class="topics-image" id="desktop">
+                    <img src="./img/CSS-representation.webp" alt="CSS">
+                </div>
+                <div class="topics-image" id="movile">
+                    <img src="./img/CCS-representation-movile.webp" alt="">
+                </div>
+            </div>
+            <div class="container-item topics" id="topics-2">
+                <div class="topics-explanation">
+                    <h3 id="5">Box Model</h3>
+                    <p>Es el modelo que describe 
+                        cómo se estructura un elemento: 
+                        contenido, padding, borde y margen, 
+                        afectando su tamaño y posición.
+                    </p>
+                    <h3 id="6">Herencia y Especificidad</h3>
+                    <p>
+                        La herencia permite que 
+                        algunas propiedades se transmitan a elementos hijos, 
+                        mientras la especificidad determina qué regla 
+                        tiene prioridad en caso de conflicto.
+                    </p>
+                    <h3 id="7">Display: Flexbox</h3>
+                    <p>
+                        Es un diseño unidimensional que organiza 
+                        elementos en filas o columnas con control 
+                        preciso de alineación y espacio entre ellos.
+                    </p>
+                    <h3 id="8">Positions</h3>
+                    <p>
+                        Determinan cómo se posicionan los elementos: 
+                        <em>static</em>, <em>relative</em>, 
+                        <em>absolute</em>, <em>fixed</em> y 
+                        <em>sticky</em>, según su relación con otros 
+                        elementos o el viewport.
+                    </p>
+                </div>
+                <div class="topics-image">
+                    <img src="./img/CSS-representation3.jpg" alt="CSS">
+                </div>
+            </div>
+            <div class="container-item topics" id="topics-3">
+                <div class="topics-explanation">
+                    <h3 id="9">Display: Grid</h3>
+                    <p>
+                        Es un sistema de diseño bidimensional 
+                        que organiza contenido en filas y 
+                        columnas para crear layouts complejos.
+                    </p>
+                    <h3 id="10">Estilos Responsivos</h3>
+                    <p>
+                        Adaptan el diseño a diferentes tamaños de 
+                        pantalla utilizando media queries, 
+                        tamaños relativos y técnicas flexibles.
+                        Una de las principales técnicas para lograr esto 
+                        son la <em>Media Queries</em>
+                    </p>
+                </div>
+                <div class="topics-image">
+                    <img src="./img/CSS-representation2.png" alt="CSS">
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

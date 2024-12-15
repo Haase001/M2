@@ -1,76 +1,288 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.navbar{
-    border-bottom: solid rgba(0, 0, 0, 0.397) 3px ;
-    height: 50px;
-    position: sticky;
-    top: 0;
-    background-color: antiquewhite;
-}
-
-.nav-item{
-    display: inline-block;
-    padding-top: 10px;
-    color: black;
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none;
-    margin-right: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    height: 49px;
+}
+/* Le pedí a una IA hacer una imagen para esta pagina
+    y le pedí me dijera como ponerla de fondo, este fué su solucion*/
+/*
+body {
+    background-image: url(../img/rising-tech-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.nav-item:hover{
-    background-color: rgba(0, 255, 255, 0.196);
-    color: black;
-    border-bottom: solid 2px black;
+#background {
+    display: none;
+}
+*/
+/*Esta fué mi solucion por que la de arriba no me gusto*/
+
+#background {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1500px;
+    height: auto;
+    z-index: -1;
+    min-width: 1000px;
+    pointer-events: none;
 }
 
-h1{
-    padding: 50px;
+.web-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.web-container .container-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: larger;
+    gap: 20px;
+}
+
+.web-container #About-me {
+    flex-direction: row;
+    max-width: 100%;
+    background-color: #02061773;
+    margin-top: 400px;
+}
+
+.web-container #About-me #about-me-text {
+    width: 70%;
+    font-size: 18px;
+    line-height: 2.2;
+    padding: 0 5%;
+}
+
+.web-container #About-me #about-me-img {
+    width: 30%;
+}
+
+.web-container #About-me #about-me-img img {
+    max-width: 100%;
+}
+
+.web-container #web-item {
+    max-width: 80%;
+    padding: 5%;
+}
+
+.web-container .container-item h1{
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.titulo-custom{
-    color: red;
-    background-color: blue;
-    margin-bottom: 100px;
-    text-align: center;
+.web-container .container-item h2 {
+    font-size: 45px;
 }
 
-/*Con una barra y un asterisco se hacen comentarios*/
-
-.subtitulo-custom{
-    color: maroon;
-    background-color: magenta;
+.web-container .container-item a {
+    color: whitesmoke;
 }
 
-#identificador-parrafo{
-    margin-top: 70px;
+.web-container #course-explanation {
+    max-width: 80%;
+    margin-top: 300px;
+    padding: 5%;
 }
 
-span{
-    display: inline-block;
-    margin-bottom: 60px;
-    margin-top: 60px; 
-}
-ul .list-item{
-    border: 3px solid black;
-    color: black;
-    background-color: blueviolet;
+.web-container #course-explanation li {
+    margin-bottom: 5px;
 }
 
-ul .list-item a{
+.web-container #course-explanation li:hover {
+    font-size: 20px;
+    background-color: #06196d83;
+}
+
+.web-container .topics {
+    flex-direction: row;
+    max-width: 100%;
+    background-color: #02061773;
+}
+
+.web-container .topics .topics-explanation {
+    width: 70%;
+    font-size: 18px;
+    line-height: 2.2;
+    padding: 0 5%;
+}
+
+.web-container .topics .topics-image {
+    width: 30%;
+}
+
+.web-container .topics .topics-image img {
+    max-width: 100%;
+}
+
+.web-container .topics #movile {
+    display: none;
+}
+
+.web-container #topics-2 {
+    flex-direction: row-reverse;
+    background-color: transparent;
+}
+
+.web-container #topics-3{
+    padding-bottom: 10%;
+}
+
+/*Navbar abajo para mejor presentacion XD*/
+.navbar{
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #020617;
+    box-shadow: 3px 0 3px rgba(255, 255, 255, 0.593);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2%;
+    z-index: 10;
+}
+
+.nav-item{
+    padding: 10px;
+    color: white;
     text-decoration: none;
-    color: chocolate;
+    margin-right: 10px;
+    text-align: center;
+    max-height: 60px;
 }
 
-ul .list-item a:hover{
-    background-color: aliceblue;
-    color: black;
+.nav-item a {
+    font-size: larger;
+    font-weight: 600;
+    color: whitesmoke;
 }
+
+.nav-item #logo-becalos {
+    max-height: 100%;
+}
+
+.nav-button:hover{
+    border: solid 2px whitesmoke;
+    box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.463);
+}
+
+@media (min-width: 1450px) {
+    *{
+        font-size: 40px;
+    }
+    #background {
+        width: 2560px;
+    }
+    .web-container #About-me{
+        margin-top: 1000px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .navbar{
+        height: 100%;
+        position: fixed;
+        bottom: 0;
+        width: auto;
+        grid-template-columns: 120px;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .navbar .nav-image  img{
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .navbar #becalos {
+        grid-row: 2;
+    }
+
+    .web-container {
+    margin-left: 120px;
+    }
+
+    .web-container #About-me {
+        margin-top: 900px;
+    }
+}
+
+@media (max-width:780px) {
+    .navbar{
+        grid-template-columns: 20px;
+        overflow: hidden;
+    }
+
+    .navbar:hover {
+        grid-template-columns: 120px;
+    }
+
+    .navbar .nav-button {
+        padding-left: 20px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .web-container {
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    .web-container #About-me{
+        flex-direction: column;
+    }
+
+    .web-container #About-me #about-me-img {
+        width: 50%;
+        align-self: center;
+    }
+
+    .web-container #course-explanation {
+        max-width: 100%;
+    }
+
+    .web-container .topics {
+        flex-direction: column;
+    }
+
+    .web-container .topics .topics-explanation {
+        width: 100%;
+    }
+
+    .web-container .topics #desktop {
+        display: none;
+    }
+
+    .web-container .topics #movile {
+        display: block;
+        width: 50%;
+        align-self: center;
+    }
+
+    .web-container #topics-2 {
+        flex-direction: column;
+    }
+
+    .web-container .topics .topics-image {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+
+

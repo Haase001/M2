@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844">
+  <!-- Definitions for gradients and filters -->
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bg-gradient" cx="50%" cy="100%" r="100%">
+      <stop offset="0%" style="stop-color:#0a0f2d"/>
+      <stop offset="100%" style="stop-color:#020617"/>
+    </radialGradient>
+    
+    <!-- Circle gradient -->
+    <radialGradient id="circle-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4a9eff" stop-opacity="0.3"/>
+      <stop offset="70%" style="stop-color:#304FFE" stop-opacity="0.1"/>
+      <stop offset="100%" style="stop-color:#1a237e" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Glow filter -->
+    <filter id="tech-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#4a9eff" result="color"/>
+      <feComposite in="color" in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="390" height="844" fill="url(#bg-gradient)"/>
+
+  <!-- Main circular element - centered horizontally, positioned near bottom -->
+  <g transform="translate(195, 700)">
+    <!-- Base circle with gradient -->
+    <circle cx="0" cy="0" r="300" fill="url(#circle-gradient)"/>
+    
+    <!-- Orbital rings -->
+    <g fill="none" stroke="#4a9eff" stroke-width="1" opacity="0.3" filter="url(#tech-glow)">
+      <circle cx="0" cy="0" r="280"/>
+      <circle cx="0" cy="0" r="250"/>
+      <circle cx="0" cy="0" r="220"/>
+    </g>
+
+    <!-- Circuit patterns -->
+    <g stroke="#00ff9d" stroke-width="2" fill="none" opacity="0.4" filter="url(#tech-glow)">
+      <path d="M-200,-200 A300,300 0 0,1 200,-200"/>
+      <path d="M-150,-150 A250,250 0 0,1 150,-150"/>
+      <path d="M-100,-100 A200,200 0 0,1 100,-100"/>
+    </g>
+
+    <!-- Connection nodes -->
+    <g fill="#4a9eff" filter="url(#tech-glow)">
+      <circle cx="-200" cy="-200" r="4"/>
+      <circle cx="200" cy="-200" r="4"/>
+      <circle cx="-150" cy="-150" r="4"/>
+      <circle cx="150" cy="-150" r="4"/>
+      <circle cx="0" cy="-250" r="4"/>
+      <circle cx="-100" cy="-220" r="4"/>
+      <circle cx="100" cy="-220" r="4"/>
+    </g>
+
+    <!-- Hexagonal grid pattern -->
+    <g stroke="#304FFE" stroke-width="1" fill="none" opacity="0.2">
+      <path d="M-40,-250 L-10,-235 L20,-250 L20,-280 L-10,-295 L-40,-280 Z"/>
+      <path d="M-120,-200 L-90,-185 L-60,-200 L-60,-230 L-90,-245 L-120,-230 Z"/>
+      <path d="M60,-200 L90,-185 L120,-200 L120,-230 L90,-245 L60,-230 Z"/>
+    </g>
+
+    <!-- Rising energy lines -->
+    <g stroke="#00ff9d" stroke-width="1" opacity="0.3" filter="url(#tech-glow)">
+      <path d="M-150,-300 L-130,-270 L-170,-240 L-130,-210"/>
+      <path d="M0,-300 L20,-270 L-20,-240 L20,-210"/>
+      <path d="M150,-300 L130,-270 L170,-240 L130,-210"/>
+    </g>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#4a9eff" filter="url(#tech-glow)">
+    <circle cx="100" cy="200" r="2"/>
+    <circle cx="300" cy="300" r="2"/>
+    <circle cx="150" cy="250" r="2"/>
+    <circle cx="250" cy="180" r="2"/>
+    <circle cx="195" cy="150" r="2"/>
+  </g>
+</svg>
